@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/index.js" ></script>	
+	</head>
+	<body>
+		<!--顶部工具栏-->
+		<div class="bd-header">
+			<div class="header-left">
+				<a class="logo" href="#">xxx后台管理系统</a>
+			</div>
+			<div class="header-right">
+				<ul class="toolbar-list">
+					<li><a href="#">系统设置</a></li>
+					<li><a href="#">下载SDK</a></li>
+					<li class="user-info">
+						<a href="#"><i class="fa fa-user-circle-o"></i> admin <i id="user-info-arrow" class="fa fa-caret-down"></i></a>
+						<div class="user-info-panel">
+							<span class="arrow"></span>
+							<ul>
+								<li><a href="#">个人信息</a></li>
+								<li><a href="#">修改密码</a></li>
+								<li><span class="line"></span></li>
+								<li><a href="#">退出</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--/顶部工具栏 -->
+		<div class="bd-content">
+			<div class="bd-content-nav">
+				<h3 class="nav-title">导航列表</h3>
+				<ul class="parent-list">
+					<li>
+						<a class="parent-list-item" href="javascript:;"><i class="fa fa-cog"></i> 系统管理 <i class="fa fa-angle-down sanjiao"></i></a>
+						<ul class="son-list" style="display: block;">
+							<li><a alt="pages/managerList.html" title="管理员管理" href="javascript:;"><i class="fa fa-address-book"></i> 管理员管理</a></li>
+							<li><a alt="pages/deptList.html" title="部门管理" href="javascript:;"><i class="fa fa-adjust"></i> 部门管理</a></li>
+							<li><a alt="pages/roleList.html" title="角色管理" href="javascript:;"><i class="fa fa-rotate-left"></i> 角色管理</a></li>
+							<li><a alt="pages/menuList.html" title="菜单管理" href="javascript:;"><i class="fa fa-id-card"></i> 菜单管理</a></li>
+							<li><a alt="pages/otherList.html" title="其他管理" href="javascript:;"><i class="fa fa-sellsy"></i> SQL监控管理</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="parent-list-item" href="javascript:;"><i class="fa fa-cube"></i> 运维管理 <i class="fa fa-angle-left sanjiao"></i></a>
+						<ul class="son-list" style="display: none;">
+							<li><a href="javascript:;"><i class="fa fa-address-book"></i> 管理员管理</a></li>
+							<li><a href="javascript:;"><i class="fa fa-adjust"></i> 部门管理</a></li>
+							<li><a href="javascript:;"><i class="fa fa-rotate-left"></i> 角色管理</a></li>
+							<li><a href="javascript:;"><i class="fa fa-id-card"></i> 菜单管理</a></li>
+							<li><a href="javascript:;"><i class="fa fa-sellsy"></i> SQL监控管理</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="parent-list-item" href="javascript:;"><i class="fa fa-flag"></i> 其它模块 <i class="fa fa-angle-left sanjiao"></i></a>
+					</li>
+				</ul>
+			</div>
+			<div class="bd-content-right">
+				<div class="content-right-title">
+					<ul id="content-right-title-ul">
+						<li><a href="#"><i class="fa fa-home"></i> 首页 </a></li>
+					</ul>
+				</div>
+				<iframe id="main" style="padding:0;margin:0;" src="pages/welcome.html" width="100%" frameborder="no"></iframe>
+			</div>
+			<div class="bd-content-right-bottom">
+				@2016 Baidu | 京ICP证030173号
+			</div>
+			
+		</div>
+		
+		
+		<script>
+			//初始化系统
+			bdyc.init();
+			
+			//当屏幕大小发生改变时需求重新初始化高度
+			window.onresize = function(){
+				bdyc.initHeight();
+			}
+		</script>
+	</body>
+</html>

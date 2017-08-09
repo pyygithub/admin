@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录页面</title>
+		<link rel="stylesheet" href="css/login.css" />
+		<script type="text/javascript" src="js/login.js" ></script>
+	</head>
+	<body>
+		<div class="login-box">
+			<div class="login-top">
+				<div class="login-top-title-box">
+					<div class="login-top-title">
+						<img class="logo" src="img/logo_max.png" alt="" />
+						<span class="text">TomExam3.0标准版</span>
+						<img class="code" src="img/code.png" alt="" />
+					</div>
+				</div>
+				<div class="login-top-form">
+					<form action="index.html">
+						<table>
+							<tr>
+								<td class="label-text">用户名</td>
+								<td class="ipt"><input type="text" name="username"/></td>
+							</tr>
+							<tr>
+								<td class="label-text">密　码</td>
+								<td class="ipt"><input type="password" name="password"/></td>
+							</tr>
+							<tr>
+								<td class="label-text">类　型</td>
+								<td class="ipt">
+									<select class="ipt-select" name="type" id="">
+										<option value="1">学员</option>
+										<option value="0">管理员</option>
+									</select>
+									<input class="code" type="text" name="checkcode" />
+									<img class="checkcode-img" src="img/checkcode.jpg" alt="" />
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="btn-group">
+									<input class="btn submit" type="submit" value="登录"/>
+									<input class="btn reg" type="button" value="注册"/>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+			<div class="login-bottom">
+				<p>推荐使用Chrome内核、FireFox浏览器访问系统</p>
+				<p>Copyright © TomExam.com All Right Reserved 2009-2017</p>
+			</div>
+		</div>
+	</body>
+</html>
